@@ -1,11 +1,2 @@
 [[plugins]]
   package = "@netlify/plugin-nextjs"
-
-[build.environment]
-  PNPM_FLAGS = "--shamefully-hoist"
-
-[context.production.environment]
-  PNPM_FLAGS = "--shamefully-hoist"
-
-[context.deploy-preview.environment]
-  PNPM_FLAGS = "--shamefully-hoist"

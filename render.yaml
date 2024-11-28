@@ -1,8 +1,8 @@
 services:
   - type: web
-    name: ably-livesync-neon
-    runtime: node
     plan: free
+    runtime: node
+    name: ably-livesync-neon
     buildCommand: pnpm install --prod=false; pnpm build
     startCommand: pnpm start
     autoDeploy: false

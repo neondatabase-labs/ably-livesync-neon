@@ -39,10 +39,8 @@ export async function getPosts(): Promise<Post[]> {
 export async function getPost(id: number): Promise<[Post, number]> {
   return await prisma.$transaction(async (tx) => {
     const post = await getPostTx(tx, id)
-
     type r = { nextval: number }
     const [{ nextval }] = await tx.$queryRaw<r[]>`SELECT nextval('outbox_sequence_id_seq')::integer`
-
     return [post, nextval]
   })
 }
@@ -77,7 +75,6 @@ export async function addComment(tx: TxClient, mutationId: string, postId: numbe
     data: { postId, authorId, content },
     include: { author: true },
   })
-
   return {
     mutation_id: mutationId,
     channel: `post:${comment.postId}`,
@@ -94,7 +91,6 @@ export async function editComment(tx: TxClient, mutationId: string, id: number, 
     data: { content },
     include: { author: true },
   })
-
   return {
     mutation_id: mutationId,
     channel: `post:${comment.postId}`,
@@ -108,7 +104,6 @@ export async function deleteComment(tx: TxClient, mutationId: string, id: number
   const comment = await tx.comment.delete({
     where: { id },
   })
-
   return {
     mutation_id: mutationId,
     channel: `post:${comment.postId}`,

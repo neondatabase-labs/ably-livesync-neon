@@ -29,6 +29,12 @@ https://ably-livesync-neon.vercel.app
 2. Create a new database (or select an existing one).
 3. Navigate to the database settings to find your connection string, which will be your `DATABASE_URL`.
 
+#### Seed the database
+
+```bash
+npm run db
+```
+
 ## One-click Deploy
 
 You can deploy this template to Vercel/Netlify/Render with the buttons below:
