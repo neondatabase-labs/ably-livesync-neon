@@ -32,6 +32,7 @@
     "ws": "^8.18.0"
   },
   "devDependencies": {
+    "@netlify/plugin-nextjs": "^5.8.1",
     "@types/lodash": "^4.17.13",
     "@types/ms": "^0.7.31",
     "@types/node": "18.15.11",

@@ -65,6 +65,9 @@ importers:
         specifier: ^8.18.0
         version: 8.18.0
     devDependencies:
+      '@netlify/plugin-nextjs':
+        specifier: ^5.8.1
+        version: 5.8.1
       '@types/lodash':
         specifier: ^4.17.13
         version: 4.17.13
@@ -401,6 +404,10 @@ packages:
 
   '@neondatabase/serverless@0.10.4':
     resolution: { integrity: sha512-2nZuh3VUO9voBauuh+IGYRhGU/MskWHt1IuZvHcJw6GLjDgtqj/KViKo7SIrLdGLdot7vFbiRRw+BgEy3wT9HA== }
+
+  '@netlify/plugin-nextjs@5.8.1':
+    resolution: { integrity: sha512-WB1N0FslhWZ1yAVYTcB6CcFrFOUSQ0O2LfavYZrbAypeNxu2I+oO+cgmhfDgZ8Eoq1g4EMeoIGMkNoZ4ogZTsg== }
+    engines: { node: '>=18.0.0' }
 
   '@next/env@15.0.3':
     resolution: { integrity: sha512-t9Xy32pjNOvVn2AS+Utt6VmyrshbpfUMhIjFO60gI58deSo/KgLOp31XZ4O+kY/Is8WAGYwA5gR7kOb1eORDBA== }
@@ -1678,6 +1685,8 @@ snapshots:
   '@neondatabase/serverless@0.10.4':
     dependencies:
       '@types/pg': 8.11.6
+
+  '@netlify/plugin-nextjs@5.8.1': {}
 
   '@next/env@15.0.3': {}
 
