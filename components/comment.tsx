@@ -38,13 +38,13 @@ export default function Comment({ comment, onEdit, onDelete }: CommentProps) {
             <Image src={comment.author.image || DEFAULT_AVATAR_URL} alt={comment.author.username} width={36} height={36} className="rounded-full ring-1 ring-gray-900/5" />
           </div>
           <p className="text-sm font-semibold">{comment.author.username}</p>
-          {/* <p className="ml-auto text-sm text-gray-500">{new Date(comment.createdAt).toLocaleString()}</p>
+          <p className="ml-auto text-sm text-gray-500">{new Date(comment.createdAt).toLocaleString()}</p>
           {comment.author.id === user?.id && (
             <>
               <PencilIcon className="ml-4 h-6 w-6 text-blue-300 hover:text-blue-500 hover:cursor-pointer" onClick={() => setIsEditMode(!isEditMode)} />
               <TrashIcon className="ml-4 h-6 w-6 text-red-300 hover:text-red-500 hover:cursor-pointer" onClick={onDelete} />
             </>
-          )} */}
+          )}
         </div>
         {isEditMode ? (
           <form className="space-y-1" onSubmit={onSubmit} onReset={onReset}>
