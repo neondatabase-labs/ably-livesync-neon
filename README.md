@@ -65,6 +65,10 @@ You can deploy this template to Vercel/Netlify/Render with the buttons below:
 
 - [Neon](https://neon.tech) – A serverless database platform that provides instant scalability and high performance for your applications, allowing you to focus on building without worrying about infrastructure.
 
+#### Real-time Sync
+
+- [Ably](https://ably.com) – A real-time messaging platform that enables you to build interactive applications with instant data synchronization and high performance.
+
 #### Deployment
 
 - [Vercel](https://vercel.com/) – Easily preview & deploy changes with git.
