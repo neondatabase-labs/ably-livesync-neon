@@ -19,17 +19,19 @@ https://ably-livesync-neon.vercel.app
 
 ## Setup
 
-#### Ably
+#### 1. Get your Ably Key
 
-- TODO
+1. Sign up or log in to your account on Neon.
+2. Create a new Ably app (or select an existing one).
+3. Navigate to the API Keys section to find your API Key, which will be your `NEXT_PUBLIC_ABLY_API_KEY`.
 
-#### Serverless Postgres (Neon)
+#### 2. Spin up a Serverless Postgres
 
 1. Sign up or log in to your account on Neon.
 2. Create a new database (or select an existing one).
 3. Navigate to the database settings to find your connection string, which will be your `DATABASE_URL`.
 
-#### Seed the database
+#### 3. Seed your Serverless Postgres
 
 ```bash
 npm run db
