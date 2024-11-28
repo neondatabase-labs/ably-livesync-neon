@@ -74,4 +74,4 @@ You can deploy this template to Vercel/Netlify/Render with the buttons below:
 
 ## Author
 
-- Rishi Raj Jain ([@rishi*raj_jain*](https://twitter.com/rishi_raj_jain_))
+- Rishi Raj Jain ([@rishi_raj_jain_](https://twitter.com/rishi_raj_jain_))
