@@ -11,7 +11,7 @@ const typeToColour = (type: AlertType['type']): string => {
 
 const Alert = ({ alert }: { alert: AlertType }) => <div className={`${typeToColour(alert.type)} text-white px-4 py-2 rounded mt-4 shadow`}>{alert.message}</div>
 
-const AlertContainer = () => {
+export default function () {
   const { alerts } = useAlert()
   return (
     <div className="fixed bottom-0 left-0 z-50 flex flex-col items-start space-y-4 p-4">
@@ -21,5 +21,3 @@ const AlertContainer = () => {
     </div>
   )
 }
-
-export default AlertContainer

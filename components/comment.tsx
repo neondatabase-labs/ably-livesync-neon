@@ -13,7 +13,7 @@ type CommentProps = {
   onDelete: () => void
 }
 
-export default function Comment({ comment, onEdit, onDelete }: CommentProps) {
+export default function ({ comment, onEdit, onDelete }: CommentProps) {
   const user = useContext(AuthorContext)
   const [isEditMode, setIsEditMode] = useState(false)
   const [editedComment, setEditedComment] = useState(comment.content)

@@ -1,4 +1,4 @@
-export default function CommentPlaceholder() {
+export default function () {
   return (
     <div className="bg-white/10 px-4 pb-4 mb-2 shadow-xl ring-1 ring-gray-900/5 rounded-lg backdrop-blur-lg max-w-full w-screen">
       <div className="flex flex-col">

@@ -86,7 +86,7 @@ function Post({ post: initialPost }: { post: PostType }) {
   )
 }
 
-export default function PostWrapper({ user, post: initialPost }: { user: AuthorType; post: PostType }) {
+export default function ({ user, post: initialPost }: { user: AuthorType; post: PostType }) {
   const client = new Ably.Realtime({ key: process.env.NEXT_PUBLIC_ABLY_API_KEY })
   return (
     <AblyProvider client={client}>

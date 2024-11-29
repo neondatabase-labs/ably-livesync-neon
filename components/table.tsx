@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { getPosts } from '@/lib/prisma/api'
 import RefreshButton from './refresh-button'
 
-export default async function Table() {
+export default async function () {
   const startTime = Date.now()
   const posts = await getPosts()
   const duration = Date.now() - startTime

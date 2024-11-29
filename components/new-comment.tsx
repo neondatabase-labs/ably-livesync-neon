@@ -6,7 +6,7 @@ import { AuthorContext } from '@/context/author'
 import { DEFAULT_AVATAR_URL } from '@/lib/image'
 import { Author as AuthorType } from '@/lib/prisma/api'
 
-export default function NewComment({ onAdd }: { onAdd: (author: AuthorType, content: string) => void }) {
+export default function ({ onAdd }: { onAdd: (author: AuthorType, content: string) => void }) {
   const author = useContext(AuthorContext)
   const [comment, setComment] = useState('')
 

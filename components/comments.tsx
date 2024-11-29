@@ -11,7 +11,7 @@ type CommentsProps = {
   onDelete: (id: number) => void
 }
 
-export default function Comments({ comments, onEdit, onDelete }: CommentsProps) {
+export default function ({ comments, onEdit, onDelete }: CommentsProps) {
   return (
     <div id="comments-section" className="flex flex-col max-h-[300px] overflow-y-scroll my-4 gap-y-4 divide-y divide-gray-600">
       {comments
