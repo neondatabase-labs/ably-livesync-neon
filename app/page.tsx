@@ -9,7 +9,7 @@ import { getPost, getRandomUser } from '@/lib/prisma/api'
 import { Suspense } from 'react'
 
 export default async function () {
-  const promises = await Promise.all([getPost(1), getRandomUser()]) 
+  const promises = await Promise.all([getPost(1), getRandomUser()])
   const [post] = promises[0]
   const user = promises[1]
   return (

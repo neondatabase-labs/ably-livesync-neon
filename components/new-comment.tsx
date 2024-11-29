@@ -20,8 +20,8 @@ export default function NewComment({ onAdd }: { onAdd: (author: AuthorType, cont
 
   return (
     <form className="w-full" onSubmit={onSubmit}>
-      <div className="w-full rounded-lg border border-white/40">
-        <div className="px-4 py-2 rounded-t-lg">
+      <div className="w-full rounded-lg border border-white/20">
+        <div className="px-4 rounded-t-lg">
           <div className="flex items-center py-3">
             <div className="flex flex-col space-x-4 pr-3">
               <Image src={author?.image || DEFAULT_AVATAR_URL} alt={author?.username || 'avatar'} width={36} height={36} className="rounded-full ring-1 ring-gray-900/5" />
@@ -44,7 +44,7 @@ export default function NewComment({ onAdd }: { onAdd: (author: AuthorType, cont
         <div className="flex items-center justify-between px-3 py-2">
           <button
             type="submit"
-            className="inline-flex items-center py-2.5 px-4 text-xs font-medium text-center text-white bg-black rounded-lg border border-gray-400 hover:border-gray-100"
+            className="inline-flex items-center py-2.5 px-4 text-xs font-medium text-center text-gray-400 hover:text-white bg-black rounded-lg border border-gray-600 hover:border-gray-100"
           >
             Post comment &rarr;
           </button>

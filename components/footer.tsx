@@ -3,7 +3,7 @@ import { GitHub, Linkedin, Twitter } from 'react-feather'
 
 export default function () {
   return (
-    <footer className="w-full pt-4 pb-2 flex flex-col items-center">
+    <footer className="w-full pt-8 pb-2 flex flex-col items-center">
       <div className="flex flex-row w-full flex-wrap gap-2">
         <a
           target="_blank"
