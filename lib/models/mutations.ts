@@ -10,9 +10,7 @@ export async function addComment(mutationId: string, author: AuthorType, postId:
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ mutationId, authorId: author.id, postId, content }),
   })
-  if (!response.ok) {
-    throw new Error(`POST /api/comments: ${response.status} ${JSON.stringify(await response.json())}`)
-  }
+  if (!response.ok) throw new Error(`POST /api/comments: ${response.status} ${JSON.stringify(await response.json())}`)
   return response.json()
 }
 
@@ -22,9 +20,7 @@ export async function editComment(mutationId: string, id: number, content: strin
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ mutationId, content }),
   })
-  if (!response.ok) {
-    throw new Error(`PUT /api/comments/:id: ${response.status} ${JSON.stringify(await response.json())}`)
-  }
+  if (!response.ok) throw new Error(`PUT /api/comments/:id: ${response.status} ${JSON.stringify(await response.json())}`)
   return response.json()
 }
 
@@ -33,9 +29,7 @@ export async function deleteComment(mutationId: string, id: number) {
     method: 'DELETE',
     headers: { 'x-mutation-id': mutationId },
   })
-  if (!response.ok) {
-    throw new Error(`DELETE /api/comments/:id: ${response.status} ${JSON.stringify(await response.json())}`)
-  }
+  if (!response.ok) throw new Error(`DELETE /api/comments/:id: ${response.status} ${JSON.stringify(await response.json())}`)
   return response.json()
 }
 

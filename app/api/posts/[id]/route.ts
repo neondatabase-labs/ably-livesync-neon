@@ -5,7 +5,7 @@ export const fetchCache = 'force-no-store'
 import { NextRequest, NextResponse } from 'next/server'
 import { getPost } from '@/lib/prisma/api'
 
-export async function GET(request: NextRequest, { params }: { params: Promise<{ id: string }> }) {
+export async function GET(_: NextRequest, { params }: { params: Promise<{ id: string }> }) {
   try {
     const id = Number((await params).id)
     const [data, sequenceId] = await getPost(id)
