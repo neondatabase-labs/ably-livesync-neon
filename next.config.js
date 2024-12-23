@@ -5,10 +5,12 @@ module.exports = {
       {
         protocol: 'https',
         hostname: 'www.gravatar.com',
+        pathname: '/avatar/00000000000000000000000000000000',
       },
       {
         protocol: 'https',
         hostname: 'randomuser.me',
+        pathname: '/api/portraits/**/*',
       },
     ],
   },
